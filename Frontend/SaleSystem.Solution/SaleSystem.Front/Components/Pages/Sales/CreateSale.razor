@@ -1,0 +1,194 @@
+﻿@page "/sales/create"
+
+@rendermode InteractiveServer
+
+@inject NavigationManager NavigationManager
+@inject ISaleMappers SaleMappers
+@inject ISaleService SaleService
+@inject IProductService ProductService
+@inject IClientService ClientService
+
+<h3>CreateSale</h3>
+
+<EditForm FormName="CreateSaleForm" Model="@SaleRequestDTO" OnValidSubmit="@CreateSaleMethod" method="post">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="mb-4">
+        <label for="date" class="block text-gray-700">Fecha</label>
+        <InputDate id="date" @bind-Value="SaleRequestDTO.Date" class="form-input mt-1 block w-full" />
+    </div>
+
+    <div class="mb-4">
+        <label for="clientId" class="block text-gray-700">Cliente ID</label>
+      
+        <InputSelect id="clientSelect" @bind-Value="SaleRequestDTO.ClientId" class="form-input mt-1 block w-full">
+            <option value="">Seleccione un cliente</option>
+            @foreach (var client in clients)
+            {
+                <option value="@client.Id">@client.Client</option>
+            }
+        </InputSelect>
+    </div>
+
+    <h4 class="text-xl font-semibold mb-2">Elementos de la Venta</h4>
+    <button type="button" class="bg-green-500 hover:bg-green-700 text-white font-bold py-1 px-2 rounded mb-4" @onclick="AddSaleItem">
+        Añadir Elemento de Venta
+    </button>
+
+    @foreach (var sale in SaleRequestDTO.Items)
+    {
+        <div class="mb-4 p-4 border border-gray-200 rounded">
+
+            <div class="mb-2">
+                <select id="productId" class="form-select mt-1 block w-full" @onchange="@(e => OnProductSelected(e, sale))">
+                    <option value="">Selecciona un producto</option>
+                    @foreach (var product in products)
+                    {
+                        <option value="@product.Id">@product.Name</option>
+                    }
+                </select>
+            </div>
+
+            @* <div class="mb-2">
+                <label for="productId" class="block text-gray-700">Producto</label>
+                <InputSelect id="productId" @bind-Value="sale.ProductId"
+        class="form-select mt-1 block w-full" @onchange="@(e => OnProductSelected(e, item))">
+                    <option value="">Selecciona un producto</option>
+                    @foreach (var product in products)
+                    {
+                        <option value="@product.Id">@product.Name</option>
+                    }
+                </InputSelect>
+            </div> *@
+
+            <div class="mb-2">
+                <label for="quantity" class="block text-gray-700">Cantidad</label>
+                <InputNumber id="quantity" @bind-Value="sale.Quantity" class="form-input mt-1 block w-full" />
+            </div>
+
+            <div class="mb-2">
+                <label for="unitPrice" class="block text-gray-700">Precio Unitario</label>
+                <InputNumber id="unitPrice" @bind-Value="sale.PricePerUnit" class="form-input mt-1 block w-full" readonly />
+            </div>
+
+             <div class="mb-2">
+                <label for="totalPrice" class="block text-gray-700">Total del Producto</label>
+                <input id="totalPrice" value="@(sale.PricePerUnit * sale.Quantity)" class="form-input mt-1 block w-full" readonly />
+            </div>
+
+            <button type="button" class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded" @onclick="@(() => RemoveSaleItem(sale))">
+                Eliminar
+            </button>
+        </div>
+    }
+
+    <div class="flex items-center justify-between">
+        <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Guardar Venta
+        </button>
+        <button type="button" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded" @onclick="Cancel">
+            Cancelar
+        </button>
+    </div>
+</EditForm>
+
+@code {
+
+    [SupplyParameterFromForm]
+    private SaleRequestDTO SaleRequestDTO { get; set; } = new();
+
+    [SupplyParameterFromForm]
+    private List<ProductResponseDTO> products { get; set; } = new List<ProductResponseDTO>();
+
+    [SupplyParameterFromForm]
+    private List<ClientResponseDTO> clients { get; set; } = new List<ClientResponseDTO>();
+
+    private async Task CreateSaleMethod()
+    {
+        try
+        {
+            // Lógica para calcular el total
+            SaleRequestDTO.Items = SaleRequestDTO.Items;
+            SaleRequestDTO.Total = SaleRequestDTO.Items.Sum(x => x.Quantity * x.PricePerUnit);
+
+            await SaleService.CreateSale(SaleRequestDTO);
+            NavigationManager.NavigateTo("/sales");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error al crear la venta: {ex.Message}");
+        }
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        products = await ProductService.GetProducts();
+        clients = await ClientService.GetClients();
+    }
+
+    private async Task OnProductSelected(ChangeEventArgs e, SaleItemRequestDTO item)
+    {
+        if (int.TryParse(e.Value.ToString(), out int productId))
+        {
+            var selectedProduct = products.FirstOrDefault(p => p.Id == productId);
+            if (selectedProduct != null)
+            {
+                item.ProductId = selectedProduct.Id;
+                item.PricePerUnit = selectedProduct.Price; // Asigna el precio del producto
+                RecalculateTotal();
+            }
+        }
+    }
+
+    // private async Task OnProductSelected(SaleItemRequestDTO saleItemRequestDto, object selectedValueId)
+    // {
+
+    //     var selectedProduct = products.FirstOrDefault(p => p.Id == (int)selectedValueId);
+    //     if (selectedProduct is not null)
+    //     {
+    //         // saleItemRequestDto.ProductId = selectedProduct.Id;
+    //         saleItemRequestDto.PricePerUnit = selectedProduct.Price;
+    //     }
+
+    //     RecalculateTotal();
+    // }
+
+    private void AddSaleItem()
+    {
+        SaleRequestDTO.Items.Add(new SaleItemRequestDTO());
+    }
+
+    private void RemoveSaleItem(SaleItemRequestDTO item)
+    {
+        SaleRequestDTO.Items.Remove(item);
+    }
+
+    private void OnQuantityChanged(SaleItemRequestDTO saleItemRequestDTO)
+    {
+        RecalculateTotal();
+    }
+
+    private decimal GetItemTotal(SaleItemRequestDTO item)
+    {
+        // var total = pricePerUnit * quantity;
+
+        // SaleRequestDTO.Total = total;
+
+        // SaleRequestDTO = SaleRequestDTO.SaleItems.Sum(item => item.Quantity * item.PricePerUnit);
+
+        // return total;
+        return item.Quantity * item.PricePerUnit;
+    }
+
+    private void RecalculateTotal()
+    {
+        SaleRequestDTO.Total = SaleRequestDTO.Items.Sum(item => GetItemTotal(item));
+    }
+
+    private void Cancel()
+    {
+        NavigationManager.NavigateTo("/sales");
+    }
+
+}

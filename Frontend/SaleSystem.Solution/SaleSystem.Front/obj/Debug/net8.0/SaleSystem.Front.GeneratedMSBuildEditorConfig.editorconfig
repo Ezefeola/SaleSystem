@@ -1,0 +1,95 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = SaleSystem.Front
+build_property.RootNamespace = SaleSystem.Front
+build_property.ProjectDir = C:\Users\ezefe\OneDrive\Desktop\Contenedor\Proyectos\Proyectos\.NET\Blazor\SaleSystem\Frontend\SaleSystem.Solution\SaleSystem.Front\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\ezefe\OneDrive\Desktop\Contenedor\Proyectos\Proyectos\.NET\Blazor\SaleSystem\Frontend\SaleSystem.Solution\SaleSystem.Front
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/ezefe/OneDrive/Desktop/Contenedor/Proyectos/Proyectos/.NET/Blazor/SaleSystem/Frontend/SaleSystem.Solution/SaleSystem.Front/Components/App.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcHAucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ezefe/OneDrive/Desktop/Contenedor/Proyectos/Proyectos/.NET/Blazor/SaleSystem/Frontend/SaleSystem.Solution/SaleSystem.Front/Components/Pages/Categories/Categories.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXRlZ29yaWVzXENhdGVnb3JpZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ezefe/OneDrive/Desktop/Contenedor/Proyectos/Proyectos/.NET/Blazor/SaleSystem/Frontend/SaleSystem.Solution/SaleSystem.Front/Components/Pages/Categories/CreateCategory.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDYXRlZ29yaWVzXENyZWF0ZUNhdGVnb3J5LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ezefe/OneDrive/Desktop/Contenedor/Proyectos/Proyectos/.NET/Blazor/SaleSystem/Frontend/SaleSystem.Solution/SaleSystem.Front/Components/Pages/Clients/Clients.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDbGllbnRzXENsaWVudHMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ezefe/OneDrive/Desktop/Contenedor/Proyectos/Proyectos/.NET/Blazor/SaleSystem/Frontend/SaleSystem.Solution/SaleSystem.Front/Components/Pages/Clients/CreateClient.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDbGllbnRzXENyZWF0ZUNsaWVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ezefe/OneDrive/Desktop/Contenedor/Proyectos/Proyectos/.NET/Blazor/SaleSystem/Frontend/SaleSystem.Solution/SaleSystem.Front/Components/Pages/Clients/UpdateClient.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xDbGllbnRzXFVwZGF0ZUNsaWVudC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ezefe/OneDrive/Desktop/Contenedor/Proyectos/Proyectos/.NET/Blazor/SaleSystem/Frontend/SaleSystem.Solution/SaleSystem.Front/Components/Pages/Error.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xFcnJvci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ezefe/OneDrive/Desktop/Contenedor/Proyectos/Proyectos/.NET/Blazor/SaleSystem/Frontend/SaleSystem.Solution/SaleSystem.Front/Components/Pages/Home.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xIb21lLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ezefe/OneDrive/Desktop/Contenedor/Proyectos/Proyectos/.NET/Blazor/SaleSystem/Frontend/SaleSystem.Solution/SaleSystem.Front/Components/Pages/Products/CreateProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdWN0c1xDcmVhdGVQcm9kdWN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ezefe/OneDrive/Desktop/Contenedor/Proyectos/Proyectos/.NET/Blazor/SaleSystem/Frontend/SaleSystem.Solution/SaleSystem.Front/Components/Pages/Products/Products.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdWN0c1xQcm9kdWN0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ezefe/OneDrive/Desktop/Contenedor/Proyectos/Proyectos/.NET/Blazor/SaleSystem/Frontend/SaleSystem.Solution/SaleSystem.Front/Components/Pages/Products/UpdateProduct.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xQcm9kdWN0c1xVcGRhdGVQcm9kdWN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ezefe/OneDrive/Desktop/Contenedor/Proyectos/Proyectos/.NET/Blazor/SaleSystem/Frontend/SaleSystem.Solution/SaleSystem.Front/Components/Pages/Sales/CreateSale.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTYWxlc1xDcmVhdGVTYWxlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ezefe/OneDrive/Desktop/Contenedor/Proyectos/Proyectos/.NET/Blazor/SaleSystem/Frontend/SaleSystem.Solution/SaleSystem.Front/Components/Pages/Sales/SaleDetail.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTYWxlc1xTYWxlRGV0YWlsLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ezefe/OneDrive/Desktop/Contenedor/Proyectos/Proyectos/.NET/Blazor/SaleSystem/Frontend/SaleSystem.Solution/SaleSystem.Front/Components/Pages/Sales/Sales.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTYWxlc1xTYWxlcy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ezefe/OneDrive/Desktop/Contenedor/Proyectos/Proyectos/.NET/Blazor/SaleSystem/Frontend/SaleSystem.Solution/SaleSystem.Front/Components/Pages/Sales/UpdateSale.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xQYWdlc1xTYWxlc1xVcGRhdGVTYWxlLnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ezefe/OneDrive/Desktop/Contenedor/Proyectos/Proyectos/.NET/Blazor/SaleSystem/Frontend/SaleSystem.Solution/SaleSystem.Front/Components/Routes.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSb3V0ZXMucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ezefe/OneDrive/Desktop/Contenedor/Proyectos/Proyectos/.NET/Blazor/SaleSystem/Frontend/SaleSystem.Solution/SaleSystem.Front/Components/_Imports.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xfSW1wb3J0cy5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ezefe/OneDrive/Desktop/Contenedor/Proyectos/Proyectos/.NET/Blazor/SaleSystem/Frontend/SaleSystem.Solution/SaleSystem.Front/Components/Layout/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTWFpbkxheW91dC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-50ckw9s5h6
+
+[C:/Users/ezefe/OneDrive/Desktop/Contenedor/Proyectos/Proyectos/.NET/Blazor/SaleSystem/Frontend/SaleSystem.Solution/SaleSystem.Front/Components/Layout/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xMYXlvdXRcTmF2TWVudS5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = b-pnsfordbx9

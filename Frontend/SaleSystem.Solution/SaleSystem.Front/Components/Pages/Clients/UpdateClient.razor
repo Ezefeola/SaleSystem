@@ -1,0 +1,78 @@
+﻿@page "/client/update/{ClientId:int}"
+
+@rendermode InteractiveServer
+
+@inject IClientService ClientService
+@inject NavigationManager NavigationManager
+@inject IClientMappers ClientMappers
+
+<div class="container mx-auto px-4 py-6">
+    <EditForm Model="@ClientRequestDTO" OnValidSubmit="@UpdateClientAsync" FormName="UpdateClientForm" method="post">
+        <DataAnnotationsValidator />
+        <ValidationSummary />
+
+        <div class="mb-4">
+            <label for="clientName" class="block text-gray-700">Nombre del Cliente</label>
+            <InputText id="clientName" class="form-input mt-1 block w-full" @bind-Value="ClientRequestDTO.Client" />
+        </div>
+
+        <div class="mb-4">
+            <label for="phoneNumber" class="block text-gray-700">Teléfono</label>
+            <InputText id="phoneNumber" class="form-input mt-1 block w-full" @bind-Value="ClientRequestDTO.PhoneNumber" />
+        </div>
+
+        <div class="mb-4">
+            <label for="emailAddress" class="block text-gray-700">Correo Electrónico</label>
+            <InputText id="emailAddress" type="email" class="form-input mt-1 block w-full" @bind-Value="ClientRequestDTO.EmailAddress" />
+        </div>
+
+        <div class="flex items-center justify-between">
+            <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Guardar Cambios
+            </button>
+            <button type="button" class="bg-gray-500 hover:bg-gray-700 text-white font-bold py-2 px-4 rounded" @onclick="CancelEdit">
+                Cancelar
+            </button>
+        </div>
+    </EditForm>
+</div>
+
+@code {
+    [Parameter]
+    public int ClientId { get; set; }
+
+    [SupplyParameterFromForm]
+    private ClientRequestDTO ClientRequestDTO { get; set; } = new ClientRequestDTO();
+
+    protected override async Task OnInitializedAsync()
+    {
+            var clientToUpdate = await ClientService.GetClientById(ClientId);
+            ClientRequestDTO.Client = clientToUpdate.Client;
+            ClientRequestDTO.PhoneNumber = clientToUpdate.PhoneNumber;
+            ClientRequestDTO.EmailAddress = clientToUpdate.EmailAddress;
+    }
+
+    private async Task UpdateClientAsync()
+    {
+        try
+        {
+            // Console.WriteLine("HandleValidSubmit ejecutado");
+            // Console.WriteLine($"Cliente: {ClientRequestDTO.Client}, Teléfono: {ClientRequestDTO.PhoneNumber}, Correo: {ClientRequestDTO.EmailAddress}");
+            // Console.WriteLine("Cliente actualizado");
+
+            await ClientService.UpdateClient(ClientId, ClientRequestDTO);
+            NavigationManager.NavigateTo("/clients");
+        }
+        catch (Exception ex)
+        {
+            // Maneja el error
+            Console.WriteLine($"Error al actualizar el cliente: {ex.Message}");
+        }
+    }
+
+    private void CancelEdit()
+    {
+        NavigationManager.NavigateTo("/clients");
+    }
+}
+

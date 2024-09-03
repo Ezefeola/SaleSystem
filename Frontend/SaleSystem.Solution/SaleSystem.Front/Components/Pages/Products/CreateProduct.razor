@@ -1,0 +1,58 @@
+﻿<h3>CreateClient</h3>
+
+@page "/Products/Create"
+@inject IProductService ProductService
+@inject NavigationManager Navigation
+
+
+<EditForm Model="productRequestDTO" OnValidSubmit="CreateProductMethod" FormName="CreateProductForm" method="post">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="mb-4">
+        <label for="productName" class="block">Nombre</label>
+        <InputText id="productName" class="input" @bind-Value="productRequestDTO.Name" />
+    </div>
+    <div class="mb-4">
+        <label for="productCategory" class="block">Categoria</label>
+        <InputNumber id="productCategory" class="input" @bind-Value="productRequestDTO.CategoryId" />
+    </div>
+
+    <div class="mb-4">
+        <label for="productDescription" class="block">Descripcion</label>
+        <InputText id="productDescription" class="input" @bind-Value="productRequestDTO.Description" />
+    </div>
+
+    <div class="mb-4">
+        <label for="price" class="block">Precio</label>
+        <InputNumber id="productPrice" class="input" @bind-Value="productRequestDTO.Price" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Crear</button>
+
+    <button @onclick="Cancel" class="btn btn-secondary">Cancelar</button>
+</EditForm>
+
+@code {
+    [SupplyParameterFromForm]
+    public ProductRequestDTO productRequestDTO { get; set; } = new ProductRequestDTO();
+
+    private async Task CreateProductMethod()
+    {
+        try
+        {
+            await ProductService.CreateProduct(productRequestDTO);
+            Navigation.NavigateTo("/Products");
+        }
+        catch (HttpRequestException ex)
+        {
+            // Handle the error
+            Console.WriteLine($"Hubo un error: {ex.Message}");
+        }
+    }
+
+    private void Cancel()
+    {
+        Navigation.NavigateTo("/Products");
+    }
+}

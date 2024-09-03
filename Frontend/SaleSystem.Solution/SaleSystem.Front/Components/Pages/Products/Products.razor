@@ -1,0 +1,98 @@
+﻿@page "/Products"
+
+
+@rendermode InteractiveServer
+
+@inject IProductService ProductService
+@inject NavigationManager navigationManager
+@inject IProductMappers ProductMappers
+
+<h3>Products</h3>
+
+<div class="container mx-auto px-4 py-6">
+    <div class="flex justify-between items-center mb-4">
+        <h1 class="text-2xl font-bold">Gestión de Productos</h1>
+        <NavLink href="/Products/Create" class="bg-blue-500 p-2 text-white rounded-5">
+            <span>Crear productos</span>
+        </NavLink>
+
+        <NavLink href="/categories" class="bg-gray-500 p-2 text-white rounded-5">
+            <span>Listado de categorias</span>
+        </NavLink>
+
+        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded"
+                @onclick="@(() => NavigateToCreateCategory())">
+            Crear categoria
+        </button>
+    </div>
+
+    <table class="min-w-full bg-white border border-gray-200">
+        <thead class="bg-gray-200">
+            <tr>
+                <th class="py-2 px-4 border-b">ID</th>
+                <th class="py-2 px-4 border-b">Nombre del producto</th>
+                <th class="py-2 px-4 border-b">Categoria Id</th>
+                <th class="py-2 px-4 border-b">Descripcion</th>
+                <th class="py-2 px-4 border-b">Precio</th>
+                <th class="py-2 px-4 border-b">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (products is not null)
+            {
+                @foreach (var product in products)
+                {
+                    <tr>
+                        <td class="py-2 px-4 border-b">@product.Id</td>
+                        <td class="py-2 px-4 border-b">@product.Name</td>
+                        <td class="py-2 px-4 border-b">@product.CategoryId</td>
+                        <td class="py-2 px-4 border-b">@product.Description</td>
+                        <td class="py-2 px-4 border-b">@product.Price</td>
+                        <td class="py-2 px-4 border-b">
+                            <button class="bg-yellow-500 text-white p-2 rounded-md mr-2" 
+                                @onclick="@(() => NavigateToUpdate(product.Id))">
+                                Update
+                            </button>
+                          
+                            <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded"
+                                    @onclick="@(() => DeleteProductAsync(product.Id))">
+                                Eliminar
+                            </button>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+@code {
+    private List<ProductResponseDTO> products = new List<ProductResponseDTO>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadProducts();
+    }
+
+    private async Task LoadProducts()
+    {
+        products = await ProductService.GetProducts();
+    }
+
+    private async Task DeleteProductAsync(int id)
+    {
+        await ProductService.DeleteProduct(id);
+        await LoadProducts();
+    }
+
+    private void NavigateToUpdate(int id)
+    {
+        navigationManager.NavigateTo("/Product/Update/" + id);
+    }
+
+    private void NavigateToCreateCategory()
+    {
+        navigationManager.NavigateTo("/Categories/Create");
+    }
+
+}

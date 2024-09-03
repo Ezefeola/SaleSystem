@@ -1,0 +1,42 @@
+﻿@page "/categories/create"
+@inject ICategoryService CategoryService
+@inject NavigationManager Navigation
+
+
+<EditForm Model="categoryRequestDTO" OnValidSubmit="CreateCategoryMethod" FormName="CreateClientForm" method="post">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <div class="mb-4">
+        <label for="categoryName" class="block">Nombre</label>
+        <InputText id="categoryName" class="input" @bind-Value="categoryRequestDTO.Name" />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Crear</button>
+
+    <button @onclick="Cancel" class="btn btn-secondary">Cancelar</button>
+</EditForm>
+
+@code {
+    [SupplyParameterFromForm]
+    public CategoryRequestDTO categoryRequestDTO { get; set; } = new CategoryRequestDTO();
+
+    private async Task CreateCategoryMethod()
+    {
+        try
+        {
+            await CategoryService.CreateCategory(categoryRequestDTO);
+            Navigation.NavigateTo("/categories");
+        }
+        catch (HttpRequestException ex)
+        {
+            // Handle the error
+            Console.WriteLine($"An error occurred: {ex.Message}");
+        }
+    }
+
+    private void Cancel()
+    {
+        Navigation.NavigateTo("/Category");
+    }
+}

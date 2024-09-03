@@ -1,0 +1,80 @@
+﻿@page "/Clients"
+
+@rendermode InteractiveServer
+
+@inject IClientService ClientService
+@inject NavigationManager navigationManager
+@inject IClientMappers ClientMappers
+
+<h3>Clients</h3>
+
+<div class="container mx-auto px-4 py-6">
+    <div class="flex justify-between items-center mb-4">
+        <h1 class="text-2xl font-bold">Gestión de Clientes</h1>
+        <NavLink href="/client/create" class="bg-blue-500 p-2 text-white rounded-5">
+            <span>Crear clientes</span>
+        </NavLink>
+    </div>
+
+    <table class="min-w-full bg-white border border-gray-200">
+        <thead class="bg-gray-200">
+            <tr>
+                <th class="py-2 px-4 border-b">ID</th>
+                <th class="py-2 px-4 border-b">Nombre del Cliente</th>
+                <th class="py-2 px-4 border-b">Teléfono</th>
+                <th class="py-2 px-4 border-b">Correo Electrónico</th>
+                <th class="py-2 px-4 border-b">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (clients is not null)
+            {
+                @foreach (var client in clients)
+                {
+                    <tr>
+                        <td class="py-2 px-4 border-b">@client.Id</td>
+                        <td class="py-2 px-4 border-b">@client.Client</td>
+                        <td class="py-2 px-4 border-b">@client.PhoneNumber</td>
+                        <td class="py-2 px-4 border-b">@client.EmailAddress</td>
+                        <td class="py-2 px-4 border-b">
+                            <a class="bg-yellow-500 text-white p-2 rounded-md mr-2"
+                               href="/client/update/@client.Id">
+                                Update
+                            </a>
+                            <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-1 px-2 rounded"
+                                    @onclick="@(() => DeleteClient(client.Id))">
+                                Eliminar
+                            </button>
+                        </td>
+                    </tr>
+                }
+            }
+        </tbody>
+    </table>
+</div>
+
+@code {
+    private List<ClientResponseDTO> clients = new List<ClientResponseDTO>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        await LoadClients();
+    }
+
+    private async Task LoadClients()
+    {
+        clients = await ClientService.GetClients();
+    }
+
+    private async Task DeleteClient(int id)
+    {
+        await ClientService.DeleteClient(id);
+        await LoadClients();
+    }
+
+    private void NavigateToUpdate(int id)
+    {
+        navigationManager.NavigateTo("/client/update/" + id);
+    }
+    
+}
