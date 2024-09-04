@@ -13,14 +13,33 @@ namespace SaleSystemAPI.Utilities.Mappers
             {
                 ClientId = saleRequestDTO.ClientId,
                 Date = DateTime.Now,
-                SaleItemModel = saleRequestDTO.Items.Select(item => new SaleItemModel
+                SaleItemModel = saleRequestDTO.SaleItemModel.Select(item => new SaleItemModel
                 {
                     ProductId = item.ProductId,
                     PricePerUnit = item.PricePerUnit,
                     Quantity = item.Quantity,
                     TotalPrice = item.PricePerUnit * item.Quantity
                 }).ToList(),
-                Total = saleRequestDTO.Items.Sum(i => i.PricePerUnit * i.Quantity)
+                Total = saleRequestDTO.SaleItemModel.Sum(i => i.PricePerUnit * i.Quantity)
+            };
+        }
+
+        public static SaleModel FromRequestDtoToModelToUpdate(this SaleRequestDTO saleRequestDTO, int id, List<int> saleItemIds)
+        { 
+            return new SaleModel
+            {
+                ClientId = saleRequestDTO.ClientId,
+                Date = DateTime.Now,
+                SaleItemModel = saleRequestDTO.SaleItemModel.Select((item, index) => new SaleItemModel
+                {
+                    Id = saleItemIds.ElementAtOrDefault(index),
+                    SaleId = id,
+                    ProductId = item.ProductId,
+                    PricePerUnit = item.PricePerUnit,
+                    Quantity = item.Quantity,
+                    TotalPrice = item.PricePerUnit * item.Quantity
+                }).ToList(),
+                Total = saleRequestDTO.SaleItemModel.Sum(i => i.PricePerUnit * i.Quantity)
             };
         }
 
@@ -32,7 +51,7 @@ namespace SaleSystemAPI.Utilities.Mappers
                 ClientId = model.ClientId,
                 Date = model.Date,
                 Total = model.Total,
-                Items = model.SaleItemModel.Select(item => new SaleItemResponseDTO
+                SaleItemModel = model.SaleItemModel.Select(item => new SaleItemResponseDTO
                 {
                     ProductId = item.ProductId,
                     PricePerUnit = item.PricePerUnit,

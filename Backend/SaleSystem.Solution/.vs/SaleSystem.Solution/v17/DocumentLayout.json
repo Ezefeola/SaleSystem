@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Backend\\SaleSystem.Solution\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{771A811A-463B-48F1-BA84-DECC622C426B}|SaleSystemAPI\\SaleSystemAPI.csproj|c:\\users\\ezefe\\onedrive\\desktop\\contenedor\\proyectos\\proyectos\\.net\\blazor\\salesystem\\backend\\salesystem.solution\\salesystemapi\\repositories\\classes\\salerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{771A811A-463B-48F1-BA84-DECC622C426B}|SaleSystemAPI\\SaleSystemAPI.csproj|solutionrelative:salesystemapi\\repositories\\classes\\salerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{771A811A-463B-48F1-BA84-DECC622C426B}|SaleSystemAPI\\SaleSystemAPI.csproj|c:\\users\\ezefe\\onedrive\\desktop\\contenedor\\proyectos\\proyectos\\.net\\blazor\\salesystem\\backend\\salesystem.solution\\salesystemapi\\repositories\\interfaces\\isalerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{771A811A-463B-48F1-BA84-DECC622C426B}|SaleSystemAPI\\SaleSystemAPI.csproj|solutionrelative:salesystemapi\\repositories\\interfaces\\isalerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{771A811A-463B-48F1-BA84-DECC622C426B}|SaleSystemAPI\\SaleSystemAPI.csproj|c:\\users\\ezefe\\onedrive\\desktop\\contenedor\\proyectos\\proyectos\\.net\\blazor\\salesystem\\backend\\salesystem.solution\\salesystemapi\\controllers\\salecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{771A811A-463B-48F1-BA84-DECC622C426B}|SaleSystemAPI\\SaleSystemAPI.csproj|solutionrelative:salesystemapi\\controllers\\salecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,12 +19,24 @@
       "RelativeMoniker": "D:0:0:{771A811A-463B-48F1-BA84-DECC622C426B}|SaleSystemAPI\\SaleSystemAPI.csproj|solutionrelative:salesystemapi\\repositories\\classes\\genericrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{771A811A-463B-48F1-BA84-DECC622C426B}|SaleSystemAPI\\SaleSystemAPI.csproj|c:\\users\\ezefe\\onedrive\\desktop\\contenedor\\proyectos\\proyectos\\.net\\blazor\\salesystem\\backend\\salesystem.solution\\salesystemapi\\dtos\\request\\clientrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{771A811A-463B-48F1-BA84-DECC622C426B}|SaleSystemAPI\\SaleSystemAPI.csproj|solutionrelative:salesystemapi\\dtos\\request\\clientrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{771A811A-463B-48F1-BA84-DECC622C426B}|SaleSystemAPI\\SaleSystemAPI.csproj|c:\\users\\ezefe\\onedrive\\desktop\\contenedor\\proyectos\\proyectos\\.net\\blazor\\salesystem\\backend\\salesystem.solution\\salesystemapi\\utilities\\mappers\\salemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{771A811A-463B-48F1-BA84-DECC622C426B}|SaleSystemAPI\\SaleSystemAPI.csproj|solutionrelative:salesystemapi\\utilities\\mappers\\salemapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{771A811A-463B-48F1-BA84-DECC622C426B}|SaleSystemAPI\\SaleSystemAPI.csproj|c:\\users\\ezefe\\onedrive\\desktop\\contenedor\\proyectos\\proyectos\\.net\\blazor\\salesystem\\backend\\salesystem.solution\\salesystemapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{771A811A-463B-48F1-BA84-DECC622C426B}|SaleSystemAPI\\SaleSystemAPI.csproj|solutionrelative:salesystemapi\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{771A811A-463B-48F1-BA84-DECC622C426B}|SaleSystemAPI\\SaleSystemAPI.csproj|c:\\users\\ezefe\\onedrive\\desktop\\contenedor\\proyectos\\proyectos\\.net\\blazor\\salesystem\\backend\\salesystem.solution\\salesystemapi\\models\\saleitemmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{771A811A-463B-48F1-BA84-DECC622C426B}|SaleSystemAPI\\SaleSystemAPI.csproj|solutionrelative:salesystemapi\\models\\saleitemmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{771A811A-463B-48F1-BA84-DECC622C426B}|SaleSystemAPI\\SaleSystemAPI.csproj|c:\\users\\ezefe\\onedrive\\desktop\\contenedor\\proyectos\\proyectos\\.net\\blazor\\salesystem\\backend\\salesystem.solution\\salesystemapi\\dtos\\request\\salerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{771A811A-463B-48F1-BA84-DECC622C426B}|SaleSystemAPI\\SaleSystemAPI.csproj|solutionrelative:salesystemapi\\dtos\\request\\salerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{771A811A-463B-48F1-BA84-DECC622C426B}|SaleSystemAPI\\SaleSystemAPI.csproj|c:\\users\\ezefe\\onedrive\\desktop\\contenedor\\proyectos\\proyectos\\.net\\blazor\\salesystem\\backend\\salesystem.solution\\salesystemapi\\dtos\\response\\saleresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{771A811A-463B-48F1-BA84-DECC622C426B}|SaleSystemAPI\\SaleSystemAPI.csproj|solutionrelative:salesystemapi\\dtos\\response\\saleresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{771A811A-463B-48F1-BA84-DECC622C426B}|SaleSystemAPI\\SaleSystemAPI.csproj|c:\\users\\ezefe\\onedrive\\desktop\\contenedor\\proyectos\\proyectos\\.net\\blazor\\salesystem\\backend\\salesystem.solution\\salesystemapi\\models\\salemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{771A811A-463B-48F1-BA84-DECC622C426B}|SaleSystemAPI\\SaleSystemAPI.csproj|solutionrelative:salesystemapi\\models\\salemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,17 +46,105 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SaleRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Backend\\SaleSystem.Solution\\SaleSystemAPI\\DTOs\\Request\\SaleRequestDTO.cs",
+              "RelativeDocumentMoniker": "SaleSystemAPI\\DTOs\\Request\\SaleRequestDTO.cs",
+              "ToolTip": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Backend\\SaleSystem.Solution\\SaleSystemAPI\\DTOs\\Request\\SaleRequestDTO.cs",
+              "RelativeToolTip": "SaleSystemAPI\\DTOs\\Request\\SaleRequestDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T03:24:12.491Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "SaleResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Backend\\SaleSystem.Solution\\SaleSystemAPI\\DTOs\\Response\\SaleResponseDTO.cs",
+              "RelativeDocumentMoniker": "SaleSystemAPI\\DTOs\\Response\\SaleResponseDTO.cs",
+              "ToolTip": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Backend\\SaleSystem.Solution\\SaleSystemAPI\\DTOs\\Response\\SaleResponseDTO.cs",
+              "RelativeToolTip": "SaleSystemAPI\\DTOs\\Response\\SaleResponseDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T03:24:08.478Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SaleMapper.cs",
+              "DocumentMoniker": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Backend\\SaleSystem.Solution\\SaleSystemAPI\\Utilities\\Mappers\\SaleMapper.cs",
+              "RelativeDocumentMoniker": "SaleSystemAPI\\Utilities\\Mappers\\SaleMapper.cs",
+              "ToolTip": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Backend\\SaleSystem.Solution\\SaleSystemAPI\\Utilities\\Mappers\\SaleMapper.cs",
+              "RelativeToolTip": "SaleSystemAPI\\Utilities\\Mappers\\SaleMapper.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAQwBIAAAA1AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T03:07:52.133Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "SaleModel.cs",
+              "DocumentMoniker": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Backend\\SaleSystem.Solution\\SaleSystemAPI\\Models\\SaleModel.cs",
+              "RelativeDocumentMoniker": "SaleSystemAPI\\Models\\SaleModel.cs",
+              "ToolTip": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Backend\\SaleSystem.Solution\\SaleSystemAPI\\Models\\SaleModel.cs",
+              "RelativeToolTip": "SaleSystemAPI\\Models\\SaleModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T00:56:04.019Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SaleItemModel.cs",
+              "DocumentMoniker": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Backend\\SaleSystem.Solution\\SaleSystemAPI\\Models\\SaleItemModel.cs",
+              "RelativeDocumentMoniker": "SaleSystemAPI\\Models\\SaleItemModel.cs",
+              "ToolTip": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Backend\\SaleSystem.Solution\\SaleSystemAPI\\Models\\SaleItemModel.cs",
+              "RelativeToolTip": "SaleSystemAPI\\Models\\SaleItemModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T00:55:55.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ISaleRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Backend\\SaleSystem.Solution\\SaleSystemAPI\\Repositories\\Interfaces\\ISaleRepository.cs",
+              "RelativeDocumentMoniker": "SaleSystemAPI\\Repositories\\Interfaces\\ISaleRepository.cs",
+              "ToolTip": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Backend\\SaleSystem.Solution\\SaleSystemAPI\\Repositories\\Interfaces\\ISaleRepository.cs",
+              "RelativeToolTip": "SaleSystemAPI\\Repositories\\Interfaces\\ISaleRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T00:47:50.319Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SaleRepository.cs",
+              "DocumentMoniker": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Backend\\SaleSystem.Solution\\SaleSystemAPI\\Repositories\\Classes\\SaleRepository.cs",
+              "RelativeDocumentMoniker": "SaleSystemAPI\\Repositories\\Classes\\SaleRepository.cs",
+              "ToolTip": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Backend\\SaleSystem.Solution\\SaleSystemAPI\\Repositories\\Classes\\SaleRepository.cs",
+              "RelativeToolTip": "SaleSystemAPI\\Repositories\\Classes\\SaleRepository.cs",
+              "ViewState": "AQIAADcAAAAAAAAAAIAwwE0AAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T00:44:44.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "SaleController.cs",
               "DocumentMoniker": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Backend\\SaleSystem.Solution\\SaleSystemAPI\\Controllers\\SaleController.cs",
               "RelativeDocumentMoniker": "SaleSystemAPI\\Controllers\\SaleController.cs",
               "ToolTip": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Backend\\SaleSystem.Solution\\SaleSystemAPI\\Controllers\\SaleController.cs",
               "RelativeToolTip": "SaleSystemAPI\\Controllers\\SaleController.cs",
-              "ViewState": "AQIAAEkAAAAAAAAAAAAcwA0AAAAAAAAA",
+              "ViewState": "AQIAAEEAAAAAAAAAAIAwwE8AAABCAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-29T16:35:10.653Z",
               "EditorCaption": ""
@@ -44,38 +152,15 @@
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Backend\\SaleSystem.Solution\\SaleSystemAPI\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "SaleSystemAPI\\Controllers\\ProductController.cs",
-              "ToolTip": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Backend\\SaleSystem.Solution\\SaleSystemAPI\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "SaleSystemAPI\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAEoAAAAAAAAAAAAIwF4AAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T16:06:42.104Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "GenericRepository.cs",
               "DocumentMoniker": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Backend\\SaleSystem.Solution\\SaleSystemAPI\\Repositories\\Classes\\GenericRepository.cs",
               "RelativeDocumentMoniker": "SaleSystemAPI\\Repositories\\Classes\\GenericRepository.cs",
               "ToolTip": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Backend\\SaleSystem.Solution\\SaleSystemAPI\\Repositories\\Classes\\GenericRepository.cs",
               "RelativeToolTip": "SaleSystemAPI\\Repositories\\Classes\\GenericRepository.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwCsAAAAJAAAA",
+              "ViewState": "AQIAABYAAAAAAAAAAAAAAEQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-27T14:53:49.309Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ClientRequestDTO.cs",
-              "DocumentMoniker": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Backend\\SaleSystem.Solution\\SaleSystemAPI\\DTOs\\Request\\ClientRequestDTO.cs",
-              "RelativeDocumentMoniker": "SaleSystemAPI\\DTOs\\Request\\ClientRequestDTO.cs",
-              "ToolTip": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Backend\\SaleSystem.Solution\\SaleSystemAPI\\DTOs\\Request\\ClientRequestDTO.cs",
-              "RelativeToolTip": "SaleSystemAPI\\DTOs\\Request\\ClientRequestDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-26T17:12:51.376Z"
+              "WhenOpened": "2024-08-27T14:53:49.309Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -409,3 +409,4 @@ C:\Users\ezefe\OneDrive\Desktop\Contenedor\Proyectos\Proyectos\.NET\Blazor\SaleS
 C:\Users\ezefe\OneDrive\Desktop\Contenedor\Proyectos\Proyectos\.NET\Blazor\SaleSystem\Backend\SaleSystem.Solution\SaleSystemAPI\obj\Debug\net8.0\SaleSystemAPI.pdb
 C:\Users\ezefe\OneDrive\Desktop\Contenedor\Proyectos\Proyectos\.NET\Blazor\SaleSystem\Backend\SaleSystem.Solution\SaleSystemAPI\obj\Debug\net8.0\SaleSystemAPI.genruntimeconfig.cache
 C:\Users\ezefe\OneDrive\Desktop\Contenedor\Proyectos\Proyectos\.NET\Blazor\SaleSystem\Backend\SaleSystem.Solution\SaleSystemAPI\obj\Debug\net8.0\ref\SaleSystemAPI.dll
+C:\Users\ezefe\OneDrive\Desktop\Contenedor\Proyectos\Proyectos\.NET\Blazor\SaleSystem\Backend\SaleSystem.Solution\SaleSystemAPI\obj\Debug\net8.0\SaleSystemAPI.sourcelink.json

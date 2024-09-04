@@ -36,7 +36,7 @@
         Añadir Elemento de Venta
     </button>
 
-    @foreach (var sale in SaleRequestDTO.Items)
+    @foreach (var sale in SaleRequestDTO.SaleItemModel)
     {
         <div class="mb-4 p-4 border border-gray-200 rounded">
 
@@ -109,8 +109,8 @@
         try
         {
             // Lógica para calcular el total
-            SaleRequestDTO.Items = SaleRequestDTO.Items;
-            SaleRequestDTO.Total = SaleRequestDTO.Items.Sum(x => x.Quantity * x.PricePerUnit);
+            SaleRequestDTO.SaleItemModel = SaleRequestDTO.SaleItemModel;
+            SaleRequestDTO.Total = SaleRequestDTO.SaleItemModel.Sum(x => x.Quantity * x.PricePerUnit);
 
             await SaleService.CreateSale(SaleRequestDTO);
             NavigationManager.NavigateTo("/sales");
@@ -156,12 +156,12 @@
 
     private void AddSaleItem()
     {
-        SaleRequestDTO.Items.Add(new SaleItemRequestDTO());
+        SaleRequestDTO.SaleItemModel.Add(new SaleItemRequestDTO());
     }
 
     private void RemoveSaleItem(SaleItemRequestDTO item)
     {
-        SaleRequestDTO.Items.Remove(item);
+        SaleRequestDTO.SaleItemModel.Remove(item);
     }
 
     private void OnQuantityChanged(SaleItemRequestDTO saleItemRequestDTO)
@@ -171,19 +171,12 @@
 
     private decimal GetItemTotal(SaleItemRequestDTO item)
     {
-        // var total = pricePerUnit * quantity;
-
-        // SaleRequestDTO.Total = total;
-
-        // SaleRequestDTO = SaleRequestDTO.SaleItems.Sum(item => item.Quantity * item.PricePerUnit);
-
-        // return total;
         return item.Quantity * item.PricePerUnit;
     }
 
     private void RecalculateTotal()
     {
-        SaleRequestDTO.Total = SaleRequestDTO.Items.Sum(item => GetItemTotal(item));
+        SaleRequestDTO.Total = SaleRequestDTO.SaleItemModel.Sum(item => GetItemTotal(item));
     }
 
     private void Cancel()

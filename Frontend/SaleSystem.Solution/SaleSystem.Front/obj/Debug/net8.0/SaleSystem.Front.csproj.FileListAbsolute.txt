@@ -97,3 +97,4 @@ C:\Users\ezefe\OneDrive\Desktop\Contenedor\Proyectos\Proyectos\.NET\Blazor\SaleS
 C:\Users\ezefe\OneDrive\Desktop\Contenedor\Proyectos\Proyectos\.NET\Blazor\SaleSystem\Frontend\SaleSystem.Solution\SaleSystem.Front\obj\Debug\net8.0\SaleSystem.Front.pdb
 C:\Users\ezefe\OneDrive\Desktop\Contenedor\Proyectos\Proyectos\.NET\Blazor\SaleSystem\Frontend\SaleSystem.Solution\SaleSystem.Front\obj\Debug\net8.0\SaleSystem.Front.genruntimeconfig.cache
 C:\Users\ezefe\OneDrive\Desktop\Contenedor\Proyectos\Proyectos\.NET\Blazor\SaleSystem\Frontend\SaleSystem.Solution\SaleSystem.Front\obj\Debug\net8.0\ref\SaleSystem.Front.dll
+C:\Users\ezefe\OneDrive\Desktop\Contenedor\Proyectos\Proyectos\.NET\Blazor\SaleSystem\Frontend\SaleSystem.Solution\SaleSystem.Front\obj\Debug\net8.0\SaleSystem.Front.sourcelink.json

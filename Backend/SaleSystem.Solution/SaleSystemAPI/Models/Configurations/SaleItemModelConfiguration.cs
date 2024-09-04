@@ -10,6 +10,8 @@ namespace SaleSystemAPI.Models.Configurations
             builder.HasKey(x => x.Id);
 
             builder.HasOne(x => x.ProductModel).WithMany(x => x.SaleItemModel).HasForeignKey(x => x.ProductId);
+
+            builder.HasOne(x => x.SaleModel).WithMany(x => x.SaleItemModel).HasForeignKey(x => x.SaleId);
         }
 
         protected override void ConfigurateProperties(EntityTypeBuilder<SaleItemModel> builder)

@@ -30,7 +30,7 @@ namespace SaleSystemAPI.Controllers
         {
             try
             {
-                var sale = await _saleRepository.GetById(id);
+                var sale = await _saleRepository.GetSaleByIdAsync(id);
 
                 if (sale is null) return NotFound($"El id: {id} no se encontro");
 
@@ -64,22 +64,26 @@ namespace SaleSystemAPI.Controllers
         }
 
         [HttpPut("Update/{id:int}")]
-        public async Task<IActionResult> UpdateSale(int id ,SaleRequestDTO saleRequestDTO)
+        public async Task<IActionResult> UpdateSale(int id, SaleRequestDTO saleRequestDTO)
         {
             if (!ModelState.IsValid) return BadRequest(ModelState);
 
             try
             {
-                var saleToUpdate = saleRequestDTO.FromRequestDtoToModel();
+                // Obtener los IDs de los SaleItems relacionados con la venta
+                var saleItemIds = await _saleRepository.GetSaleItemIdAsync(id);
 
-                var updatedSale = await _saleRepository.Update(id, saleToUpdate);
+                // Convertir el DTO al modelo de venta usando la lista de IDs
+                var saleToUpdate = saleRequestDTO.FromRequestDtoToModelToUpdate(id, saleItemIds);
+
+                // Actualizar la venta en la base de datos
+                var updatedSale = await _saleRepository.UpdateSale(id, saleToUpdate);
 
                 return Ok(updatedSale.FromModelToResponseDto());
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
-                return BadRequest(new Exception());
+                return BadRequest(new { Message = "Error al actualizar la venta.", Exception = ex.Message });
             }
         }
 

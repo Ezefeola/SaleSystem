@@ -28,7 +28,6 @@ namespace Shared.Services.Classes
             return await _httpClient.GetFromJsonAsync<SaleResponseDTO>($"Sale/{id}");
         }
 
-
         public async Task CreateSale(SaleRequestDTO saleRequestDTO)
         {
             try

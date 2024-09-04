@@ -17,7 +17,7 @@ namespace Shared.Utilities.Mappers.Classes
             {
                 ClientId = saleRequestDTO.ClientId,
                 Date = saleRequestDTO.Date,
-                Items = saleRequestDTO.Items.Select(MapToItemResponseDTO).ToList(), 
+                SaleItemModel = saleRequestDTO.SaleItemModel.Select(MapToItemResponseDTO).ToList(), 
             };
         }
 

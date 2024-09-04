@@ -6,6 +6,6 @@
         public int ClientId { get; set; }
         public DateTime Date { get; set; }
         public decimal Total { get; set; }
-        public List<SaleItemResponseDTO> Items { get; set; } = new();
+        public List<SaleItemResponseDTO> SaleItemModel { get; set; } = new();
     }
 }

@@ -3,8 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Frontend\\SaleSystem.Solution\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{5E86B3A1-EAB2-4027-B794-91502A5F2F71}|Shared\\Shared.csproj|c:\\users\\ezefe\\onedrive\\desktop\\contenedor\\proyectos\\proyectos\\.net\\blazor\\salesystem\\frontend\\salesystem.solution\\shared\\utilities\\mappers\\classes\\salemappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E86B3A1-EAB2-4027-B794-91502A5F2F71}|Shared\\Shared.csproj|solutionrelative:shared\\utilities\\mappers\\classes\\salemappers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4416E05F-3156-4859-9861-708D54D2E09F}|SaleSystem.Front\\SaleSystem.Front.csproj|c:\\users\\ezefe\\onedrive\\desktop\\contenedor\\proyectos\\proyectos\\.net\\blazor\\salesystem\\frontend\\salesystem.solution\\salesystem.front\\components\\pages\\sales\\createsale.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4416E05F-3156-4859-9861-708D54D2E09F}|SaleSystem.Front\\SaleSystem.Front.csproj|solutionrelative:salesystem.front\\components\\pages\\sales\\createsale.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{4416E05F-3156-4859-9861-708D54D2E09F}|SaleSystem.Front\\SaleSystem.Front.csproj|c:\\users\\ezefe\\onedrive\\desktop\\contenedor\\proyectos\\proyectos\\.net\\blazor\\salesystem\\frontend\\salesystem.solution\\salesystem.front\\components\\pages\\sales\\updatesale.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{4416E05F-3156-4859-9861-708D54D2E09F}|SaleSystem.Front\\SaleSystem.Front.csproj|solutionrelative:salesystem.front\\components\\pages\\sales\\updatesale.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E86B3A1-EAB2-4027-B794-91502A5F2F71}|Shared\\Shared.csproj|c:\\users\\ezefe\\onedrive\\desktop\\contenedor\\proyectos\\proyectos\\.net\\blazor\\salesystem\\frontend\\salesystem.solution\\shared\\dtos\\request\\salerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E86B3A1-EAB2-4027-B794-91502A5F2F71}|Shared\\Shared.csproj|solutionrelative:shared\\dtos\\request\\salerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E86B3A1-EAB2-4027-B794-91502A5F2F71}|Shared\\Shared.csproj|c:\\users\\ezefe\\onedrive\\desktop\\contenedor\\proyectos\\proyectos\\.net\\blazor\\salesystem\\frontend\\salesystem.solution\\shared\\dtos\\response\\saleresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E86B3A1-EAB2-4027-B794-91502A5F2F71}|Shared\\Shared.csproj|solutionrelative:shared\\dtos\\response\\saleresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E86B3A1-EAB2-4027-B794-91502A5F2F71}|Shared\\Shared.csproj|c:\\users\\ezefe\\onedrive\\desktop\\contenedor\\proyectos\\proyectos\\.net\\blazor\\salesystem\\frontend\\salesystem.solution\\shared\\services\\classes\\saleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E86B3A1-EAB2-4027-B794-91502A5F2F71}|Shared\\Shared.csproj|solutionrelative:shared\\services\\classes\\saleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4416E05F-3156-4859-9861-708D54D2E09F}|SaleSystem.Front\\SaleSystem.Front.csproj|c:\\users\\ezefe\\onedrive\\desktop\\contenedor\\proyectos\\proyectos\\.net\\blazor\\salesystem\\frontend\\salesystem.solution\\salesystem.front\\components\\pages\\sales\\sales.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{4416E05F-3156-4859-9861-708D54D2E09F}|SaleSystem.Front\\SaleSystem.Front.csproj|solutionrelative:salesystem.front\\components\\pages\\sales\\sales.razor||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5E86B3A1-EAB2-4027-B794-91502A5F2F71}|Shared\\Shared.csproj|c:\\users\\ezefe\\onedrive\\desktop\\contenedor\\proyectos\\proyectos\\.net\\blazor\\salesystem\\frontend\\salesystem.solution\\shared\\services\\classes\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5E86B3A1-EAB2-4027-B794-91502A5F2F71}|Shared\\Shared.csproj|solutionrelative:shared\\services\\classes\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,20 +42,104 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SaleRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Frontend\\SaleSystem.Solution\\Shared\\DTOs\\Request\\SaleRequestDTO.cs",
+              "RelativeDocumentMoniker": "Shared\\DTOs\\Request\\SaleRequestDTO.cs",
+              "ToolTip": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Frontend\\SaleSystem.Solution\\Shared\\DTOs\\Request\\SaleRequestDTO.cs",
+              "RelativeToolTip": "Shared\\DTOs\\Request\\SaleRequestDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T03:22:52.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Sales.razor",
+              "DocumentMoniker": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Frontend\\SaleSystem.Solution\\SaleSystem.Front\\Components\\Pages\\Sales\\Sales.razor",
+              "RelativeDocumentMoniker": "SaleSystem.Front\\Components\\Pages\\Sales\\Sales.razor",
+              "ToolTip": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Frontend\\SaleSystem.Solution\\SaleSystem.Front\\Components\\Pages\\Sales\\Sales.razor",
+              "RelativeToolTip": "SaleSystem.Front\\Components\\Pages\\Sales\\Sales.razor",
+              "ViewState": "AQIAABsAAAAAAAAAAAAAAC4AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-04T03:19:13.218Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SaleMappers.cs",
+              "DocumentMoniker": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Frontend\\SaleSystem.Solution\\Shared\\Utilities\\Mappers\\Classes\\SaleMappers.cs",
+              "RelativeDocumentMoniker": "Shared\\Utilities\\Mappers\\Classes\\SaleMappers.cs",
+              "ToolTip": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Frontend\\SaleSystem.Solution\\Shared\\Utilities\\Mappers\\Classes\\SaleMappers.cs",
+              "RelativeToolTip": "Shared\\Utilities\\Mappers\\Classes\\SaleMappers.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T02:23:15.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SaleResponseDTO.cs",
+              "DocumentMoniker": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Frontend\\SaleSystem.Solution\\Shared\\DTOs\\Response\\SaleResponseDTO.cs",
+              "RelativeDocumentMoniker": "Shared\\DTOs\\Response\\SaleResponseDTO.cs",
+              "ToolTip": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Frontend\\SaleSystem.Solution\\Shared\\DTOs\\Response\\SaleResponseDTO.cs",
+              "RelativeToolTip": "Shared\\DTOs\\Response\\SaleResponseDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T02:20:18.476Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SaleService.cs",
+              "DocumentMoniker": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Frontend\\SaleSystem.Solution\\Shared\\Services\\Classes\\SaleService.cs",
+              "RelativeDocumentMoniker": "Shared\\Services\\Classes\\SaleService.cs",
+              "ToolTip": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Frontend\\SaleSystem.Solution\\Shared\\Services\\Classes\\SaleService.cs",
+              "RelativeToolTip": "Shared\\Services\\Classes\\SaleService.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAIwDIAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T01:52:51.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CreateSale.razor",
+              "DocumentMoniker": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Frontend\\SaleSystem.Solution\\SaleSystem.Front\\Components\\Pages\\Sales\\CreateSale.razor",
+              "RelativeDocumentMoniker": "SaleSystem.Front\\Components\\Pages\\Sales\\CreateSale.razor",
+              "ToolTip": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Frontend\\SaleSystem.Solution\\SaleSystem.Front\\Components\\Pages\\Sales\\CreateSale.razor",
+              "RelativeToolTip": "SaleSystem.Front\\Components\\Pages\\Sales\\CreateSale.razor",
+              "ViewState": "AQIAAJgAAAAAAAAAAIAwwLIAAAA7AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-04T01:33:58.034Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Frontend\\SaleSystem.Solution\\Shared\\Services\\Classes\\ProductService.cs",
+              "RelativeDocumentMoniker": "Shared\\Services\\Classes\\ProductService.cs",
+              "ToolTip": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Frontend\\SaleSystem.Solution\\Shared\\Services\\Classes\\ProductService.cs",
+              "RelativeToolTip": "Shared\\Services\\Classes\\ProductService.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABYAAABbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-04T01:27:38.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "UpdateSale.razor",
               "DocumentMoniker": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Frontend\\SaleSystem.Solution\\SaleSystem.Front\\Components\\Pages\\Sales\\UpdateSale.razor",
               "RelativeDocumentMoniker": "SaleSystem.Front\\Components\\Pages\\Sales\\UpdateSale.razor",
               "ToolTip": "C:\\Users\\ezefe\\OneDrive\\Desktop\\Contenedor\\Proyectos\\Proyectos\\.NET\\Blazor\\SaleSystem\\Frontend\\SaleSystem.Solution\\SaleSystem.Front\\Components\\Pages\\Sales\\UpdateSale.razor",
               "RelativeToolTip": "SaleSystem.Front\\Components\\Pages\\Sales\\UpdateSale.razor",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAgAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-09-03T01:00:58.66Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-03T01:00:58.66Z"
             }
           ]
         }
